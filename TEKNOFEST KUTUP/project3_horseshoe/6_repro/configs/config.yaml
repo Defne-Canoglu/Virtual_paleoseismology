@@ -1,0 +1,23 @@
+# config.yaml - Proje Ana Parametreleri
+project:
+  name: "Horseshoe_Island_Paleoseismology"
+  version: "1.0.0"
+
+roi:
+  center_lat: -67.8000
+  center_lon: -67.3000
+  core_radius_km: 80
+  extended_radius_km: 250
+  crs_wgs84: "EPSG:4326"
+
+data_sources:
+  dem:
+    name: "REMA"
+    resolution_m: 8
+  insar:
+    satellite: "Sentinel-1"
+    track_direction: "ASC_DES"
+    min_coherence: 0.3
+  seismic:
+    catalogs:
+    waveform_client: "IRIS"
